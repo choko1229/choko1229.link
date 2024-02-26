@@ -1,0 +1,35 @@
+:root {
+    --main-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    }
+}
+
+body {
+    margin: 0px;
+    font-family: "Yuruka";
+    color: var(--main-color);
+}
+
+@font-face{
+    font-family: "Yuruka";
+    src: url("/font/Yuruka.ttf");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+.topimage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.name {
+    display: flex;
+    margin: auto;
+}
