@@ -1,5 +1,12 @@
 :root {
     --main-color: #ffffff;
+    --main-text: #3a302d;
+    --sub-color: #f5deb3;
+    --footer-color: #feccaa;
+    --footer-text: #b76b37;
+    --bg-color: #ffffff;
+    --bg-light-color: #ffffffaa;
+    --link-color: #4daafb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +18,14 @@ body {
     margin: 0px;
     font-family: "Yuruka";
     color: var(--main-color);
+}
+h1,h2,h3{
+    margin: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
 @font-face{
@@ -29,7 +44,52 @@ body {
     background-position: center;
 }
 
+.sticky-header{
+    position: sticky;
+    top: 0px;
+}
+
 .name {
+    text-align: center;
+    position: relative;
+    top: 25vh;
+}
+
+.contents{
+    color: var(--main-text);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    text-align: center;
+    background-color: var(--bg-light-color);
+    backdrop-filter: blur(3px);
+    margin: 15px auto 10px auto;
+}
+
+.panel{
     display: flex;
-    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: var(--sub-color);
+    width: 300px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 7.5px 0px 7.5px 0px;
+}
+
+.card h2,.card h3{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--footer-color);
+    color: var(--footer-text);
+    text-align: left;
+    padding: 16.5px;
 }
