@@ -38,7 +38,7 @@ a {
 
 .topimage {
     width: 100vw;
-    height: 100vh;
+    height: 150px;
     background-image: url(./background.jpeg);
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@ a {
 .name {
     text-align: center;
     position: relative;
-    top: 25vh;
+    top: 20px;
 }
 
 .contents{
